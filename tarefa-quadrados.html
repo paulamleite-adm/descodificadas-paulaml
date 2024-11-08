@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadrados Coloridos</title>
+    <style>
+        body {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(6, 200px);
+            grid-template-rows: repeat(5, 200px);
+            gap: 0;
+        }
+        .square {
+            width: 200px;
+            height: 200px;
+            border: 1px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .corner {
+            border: 5px solid black;
+        }
+        /* Cores dos quadrados */
+        .red { background-color: red; }
+        .blue { background-color: #01AFF0; }
+        .green { background-color: #00AF50; }
+        .yellow { background-color: yellow; }
+        /* Pseudo-classe hover */
+        .corner:hover {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="square red corner"></div>
+        <div class="square red"></div>
+        <div class="square red"></div>
+        <div class="square red"></div>
+        <div class="square red"></div>
+        <div class="square red corner"></div>
+        
+        <div class="square red"></div>
+        <div class="square blue"></div>
+        <div class="square blue"></div>
+        <div class="square blue"></div>
+        <div class="square blue"></div>
+        <div class="square red"></div>
+        
+        <div class="square red"></div>
+        <div class="square green"></div>
+        <div class="square green"></div>
+        <div class="square green"></div>
+        <div class="square green"></div>
+        <div class="square red"></div>
+        
+        <div class="square red"></div>
+        <div class="square yellow"></div>
+        <div class="square yellow"></div>
+        <div class="square yellow"></div>
+        <div class="square yellow"></div>
+        <div class="square red"></div>
+        
+        <div class="square red corner"></div>
+        <div class="square red"></div>
+        <div class="square red"></div>
+        <div class="square red"></div>
+        <div class="square red"></div>
+        <div class="square red corner"></div>
+    </div>
+</body>
+</html>
